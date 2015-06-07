@@ -13,4 +13,4 @@ RUN sudo apt-get install hhvm -y
 
 VOLUME /var/www/html
 
-CMD ["/usr/local/bin/hhvm --mode server -vServer.Type=fastcgi -vServer.Port=9000"]
+CMD ["/usr/bin/hhvm", "-m", "server", "-vServer.Type=fastcgi", "-vServer.Port=9000"]

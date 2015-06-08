@@ -13,4 +13,6 @@ RUN sudo apt-get install hhvm -y
 
 VOLUME /var/www/html
 
+EXPOSE 9000
+
 CMD ["/usr/bin/hhvm", "-m", "server", "-vServer.Type=fastcgi", "-vServer.Port=9000"]

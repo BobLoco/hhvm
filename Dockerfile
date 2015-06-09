@@ -30,7 +30,7 @@ RUN mv mongo.so /etc/hhvm/ext/mongo.so
 
 WORKDIR /etc/hhvm
 RUN echo "hhvm.dynamic_extension_path = /etc/hhvm/ext\n" >> php.ini
-RUN echo "hhvm.dynamic_extension[mongo] = mongo.so\n" >> php.ini
+RUN echo "hhvm.dynamic_extensions[mongo] = mongo.so\n" >> php.ini
 
 VOLUME /var/www/html
 
